@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: sans-serif;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span{
+    font-size: .9rem;
+    color:#757373;
+}
+h6{
+    font-size: 1.1rem;
+    color:rgb(24 ,24 ,49);
+}
+/* navbar link */
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    padding: .5vw 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgba(0 ,0 ,0 ,0.15);
+}
+nav img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+nav .navbar {
+    display: flex;
+}
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#menu-close{
+    display: none;
+}
+nav .navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navbar ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navbar ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav .navbar ul li a:hover{
+    color: #fdc93b;
+}
+
+/* Home */
+#amir{
+    width: 100%;
+    min-height: 100vh;
+   background-image: url(/amir3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+#amir h2{
+color:#fdc93b;
+font-size: 2.2rem;
+letter-spacing: 1px;
+}
+#amir p{
+    width: 50%;
+    color: currentcolor;
+    font-size: 2rem;
+    line-height: 25px;
+    letter-spacing: 2px;
+    }
+    #amir .btn{
+        margin-top: 40px;
+    }
+    #amir a{
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 13px 35px;
+        background-color: white;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    #amir .btn .blue{
+        font-size:1em;
+        color: white;
+        background-color: rgb(21, 21, 100);
+        transition: 0.3s ease;
+    }
+    #amir .btn .blue:hover{
+        color: rgb(21, 21, 100);
+        background-color: #fff;
+    }
+
+    #amir .btn .yello{
+        font-size:1em;
+        color:white;
+        background-color:#fdc93b;
+        transition: 0.3s ease;
+    }
+    #amir .btn .yello:hover{
+        color:rgb(21, 21, 100);
+        background-color: #fff;
+    }
+
+     /* About  */
+     #salama{
+        padding: 5vw 8vw 0 8vw;
+        text-align: center;
+     }
+     #salama .cologe{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+    
+     }
+     #salama .icon{
+        background-color: rgb(227, 227, 227);
+        text-align: start;
+        width: 80%;
+        padding: 20px 30px;
+     }
+     #salama .icon i{
+        font-size: 2.3rem;
+        color: rgb(24 ,44,80);
+ 
+     }
+
+     #salama .icon h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        padding: 13px 0 7px 0;
+     }
+     #salama .icon h3{
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(46, 46, 59);
+     }
+
+     /* hassan */
+     #hassan{
+        padding: 8vw 8vw 0 8vw;
+        text-align: center;
+     }
+     #hassan .course-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        margin-top: 50px;
+
+     }
+     #hassan .course{
+        text-align: start;
+        background: whitesmoke;
+        height: 100%;
+        position: relative;
+     }
+     #hassan .course img{
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        background-position: center;
+     }
+
+     #hassan .course .update{
+        padding: 15px 15px 0 15px;
+     }
+
+     #hassan .course .update i{
+        color: #fdc93b;
+        font-size: 0.9rem;
+     }
+     #hassan .course .cost{
+        background-color: rgb(74, 74, 136);
+        color: #fff;
+        line-height: 70px;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+     }
+
+     /* falcon */
+     #falcon{
+        padding: 6vw 8vw 6vw 8vw;
+        background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url(/school2.jpg);
+        width: 100%;
+        height: 100%;   
+        min-height: 100vh;
+        background-size: cover;
+        background-position:center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ #falcon .reminder{
+    color: #fff;
+
+ }
+
+ #falcon .reminder .time{
+    display: flex;
+    margin-top: 40px;
+ }
+ 
+#falcon .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255,255,255,0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#falcon .reminder h1{
+    color: #fff;
+}
+
+#falcon .form{
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+#falcon .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+
+}
+#falcon .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+#falcon .form .btn{
+    margin-top: 20px;
+}
+
+#falcon .form .btn .yello{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size:1em;
+    color:white;
+    background-color:#fdc93b;
+    transition: 0.3s ease;
+}
+#falcon .form .btn .yello:hover{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+#mohemed img{
+    width: 100px;
+    border-radius: 50%;
+}
+#mohemed img .sayed{
+    width: 20px;
+}
+#mohemed{
+    padding: 8vw 8vw;
+    text-align: center;
+}
+#mohemed .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#mohemed .expert-box .profile{
+    background: #f5f5cc;
+    padding: 30px 10px;
+}
+.pro-links{
+    margin-top: 10px;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.pro-links i:hover{
+  background:rgb(24 ,24 ,49);
+  color: white;
+  border: rgb(46, 46, 59);
+  cursor: pointer;
+
+}
+
+footer{
+    padding: 8vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer li:hover{
+    /* color: rgb(241, 240, 245); */
+    color: #fdc93b;
+}
+
+footer p{
+    color: #7b838a;
+}
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+footer .subscribe a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 12px 15px;
+    background-color: white;
+    font-weight: 600;
+
+}
+
+footer .subscribe a.yello{
+    font-size:1em;
+    color:black;
+    background-color:#fdc93b;
+    transition: 0.3s ease;
+}
+footer .subscribe .yello:hover{
+    color:rgb(21, 21, 100);
+    background-color: #fff;
+}
+footer input::placeholder{
+    color: white;
+}
+
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright .pro-links{
+    margin-top: 0;
+}
+
+footer .copyright .pro-links i{
+     background-color:#5f7185;
+     color: #fff;
+    transition: 0.3s ease;
+}
+footer .copyright .pro-links i:hover{
+ background-color: #fdc93b;
+  color: rgb(21, 21, 100);
+  cursor: pointer;
+
+}
+
+.copyright a{
+    color: #fdc93b;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border:  2px solid #fdc93b;
+}
+
+@media(max-width:768px){
+    nav{
+        padding: 15px 20px;
+    }
+    nav img{
+        width: 100px;
+    }
+    #menu-btn{
+        display:inline-block;
+       color:black;
+       font-size: 3rem;
+    }
+    #menu-close{
+        display: initial;
+        font-size: 3rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;
+       
+    }
+    nav .navbar ul{
+        position: absolute;
+        top: 0;
+        right:-220px;
+        width: 220px;
+        height: 500px;
+        background: rgba(17,20,104,0.45);
+        backdrop-filter: blue(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        transition: 0.3s ease;
+    }
+    nav .navbar ul.active{
+        right: 0;
+    }
+    nav .navbar ul li{
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+    nav .navbar ul li a{
+        color: #fff;
+        font-size: 30px;
+    }
+    #amir{
+        padding: 0px;
+    }
+    #amir p{
+        width: 90%;
+    }
+    #salama{
+        padding: 8vw 4vw 0 8vw;
+        text-align: center;
+    }
+    #hassan{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #hassan .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    #falcon{
+        margin-top: 8vw;
+        padding:6vw 4vw 6vw 4vw ;
+        text-align: center;
+    }
+    #falcon .reminder .time{
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 40px;
+    }
+    #mohemed{
+      padding: 8vw 8vw 8vw 4vw;
+      text-align: center;
+    }
+    footer .copyright .pro-links{
+        margin-top: 15px;
+    }
+    footer input{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:475px){
+    #falcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #falcon .reminder .time{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    nav .navbar ul.active {
+        right: 0;
+        top: 80px;
+    }
+    footer input{
+        margin-bottom: 20px;
+    }
+    #menu-close{
+        font-size: 20px;
+    }
+    nav .navbar{
+        display: flex;
+        margin-top: 50px;
+        margin-right: 3px;
+    }
+    #salama .cologe {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        width: 100%;
+        margin-top: 40px;
+        padding: 40px;
+    }
+}
